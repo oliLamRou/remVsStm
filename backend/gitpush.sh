@@ -1,1 +1,3 @@
-echo "testing"
+conda activate web
+
+echo "Done"
