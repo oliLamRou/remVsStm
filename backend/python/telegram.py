@@ -1,3 +1,4 @@
+import sys
 import requests
 from dotenv import find_dotenv, dotenv_values
 
@@ -12,4 +13,5 @@ def send_telegram_message(message):
     x = requests.post(url, data=payload)
     print(x)
 
-send_telegram_message("✅ Scraping complete. CSV updated and pushed to GitHub.")
+if len(sys.argv) > 1:
+    send_telegram_message(sys.argv[1])
