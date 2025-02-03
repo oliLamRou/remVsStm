@@ -1,0 +1,8 @@
+name: web
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - requests
+  - dotenv
