@@ -12,4 +12,3 @@ if os.path.exists(filename):
 
 df.loc[len(df.index)] = [date]
 df.to_csv(filename, index=False)
-
