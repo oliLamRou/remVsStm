@@ -12,6 +12,7 @@ echo "Python Process"
 python ./backend/python/data_process.py
 
 echo "Commit ->"
+
 git add ./data/data.csv
 git commit -m 'update data'
 git push
